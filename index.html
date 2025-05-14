@@ -1,47 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Home</title>
+  <meta charset="UTF-8">
+  <title>Anuj Kadam | Web Developer</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #eaf3f8;
       margin: 0;
       padding: 0;
-      background: #f4f4f4;
     }
+
     nav {
-      background-color: #333;
-      color: white;
-      padding: 1rem;
-      text-align: center;
+      background-color: #0073e6;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
     }
+
     nav a {
       color: white;
-      margin: 0 15px;
+      margin: 0 10px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 40px auto;
+      background-color: white;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+
+    .profile-img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 20px;
+    }
+
+    .name {
+      font-size: 28px;
+      color: #003366;
+    }
+
+    .bio {
+      color: #555;
+      font-size: 16px;
+      margin: 10px 0 20px;
+    }
+
+    .social a {
+      margin: 0 10px;
+      color: #0073e6;
       text-decoration: none;
     }
-    nav a:hover {
+
+    .social a:hover {
       text-decoration: underline;
-    }
-    .container {
-      padding: 2rem;
-    }
-    h1 {
-      color: #333;
     }
   </style>
 </head>
 <body>
   <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="contact.html">Contact</a>
+    <div><strong>Anuj Kadam</strong></div>
+    <div>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </div>
   </nav>
+
   <div class="container">
-    <h1>Welcome to Our Website</h1>
-    <p>This is the home page.</p>
+    <img src="https://via.placeholder.com/150" alt="Profile Picture" class="profile-img">
+    <h1 class="name">Anuj Kadam</h1>
+    <p class="bio">Web Developer | UI/UX Designer | Blogger</p>
+    <div class="social">
+      <a href="#">Twitter</a>
+      <a href="#">LinkedIn</a>
+      <a href="#">GitHub</a>
+    </div>
   </div>
 </body>
 </html>
