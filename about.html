@@ -1,47 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>About</title>
+  <meta charset="UTF-8">
+  <title>About - Anuj Kadam</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #eaf3f8;
       margin: 0;
       padding: 0;
-      background: #f4f4f4;
     }
+
     nav {
-      background-color: #333;
-      color: white;
-      padding: 1rem;
-      text-align: center;
+      background-color: #0073e6;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
     }
+
     nav a {
       color: white;
-      margin: 0 15px;
+      margin: 0 10px;
       text-decoration: none;
+      font-weight: bold;
     }
-    nav a:hover {
-      text-decoration: underline;
-    }
+
     .container {
-      padding: 2rem;
+      max-width: 800px;
+      margin: 40px auto;
+      background-color: white;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
     }
+
     h1 {
-      color: #333;
+      color: #003366;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    p, li {
+      font-size: 16px;
+      color: #444;
+      line-height: 1.6;
     }
   </style>
 </head>
 <body>
   <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="contact.html">Contact</a>
+    <div><strong>Anuj Kadam</strong></div>
+    <div>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </div>
   </nav>
+
   <div class="container">
-    <h1>About Us</h1>
-    <p>This page contains information about our website and team.</p>
+    <h1>About Me</h1>
+    <p>I'm Anuj Kadam, a passionate web developer who enjoys building beautiful and functional web experiences. I specialize in front-end development and love experimenting with design and code.</p>
+
+    <h2>Skills</h2>
+    <ul>
+      <li>HTML5, CSS3, JavaScript</li>
+      <li>React, Bootstrap, Tailwind</li>
+      <li>UI/UX Design Principles</li>
+      <li>Responsive Web Design</li>
+    </ul>
+
+    <h2>Goals</h2>
+    <p>My long-term goal is to become a full-stack developer and create applications that improve lives. I also enjoy blogging and sharing tips on modern web technologies.</p>
   </div>
 </body>
 </html>
