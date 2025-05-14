@@ -2,66 +2,84 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>My Web Profile</title>
-  <!-- Internal CSS -->
+  <title>Contact - Anuj Kadam</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background-color: #f0f4f8;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #eaf3f8;
       margin: 0;
-      padding: 20px;
+      padding: 0;
     }
 
-    .profile-container {
-      background-color: #fff;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    nav {
+      background-color: #0073e6;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 10px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .container {
       max-width: 600px;
-      margin: auto;
-      padding: 20px;
+      margin: 40px auto;
+      background-color: white;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      color: #003366;
       text-align: center;
     }
 
-    .profile-img {
-      border-radius: 50%;
-      width: 150px;
-      height: 150px;
-      object-fit: cover;
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 12px 0;
+      border: 1px solid #ccc;
+      border-radius: 6px;
     }
 
-    .name {
-      font-size: 28px;
-      color: #333;
-      margin-top: 15px;
+    button {
+      background-color: #0073e6;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 6px;
+      cursor: pointer;
     }
 
-    .bio {
-      font-size: 16px;
-      color: #666;
-      margin-top: 10px;
-    }
-
-    .social-links a {
-      margin: 0 10px;
-      text-decoration: none;
-      color: #0073e6;
-    }
-
-    .social-links a:hover {
-      text-decoration: underline;
+    button:hover {
+      background-color: #005bb5;
     }
   </style>
 </head>
 <body>
-  <div class="profile-container">
-    <img src="anujprofile.jpg" alt="Profile Picture" class="profile-img">
-    <h1 class="name">Anuj Kadam</h1>
-    <p class="bio">Web Developer | UI/UX Enthusiast | Blogger</p>
-    <div class="social-links">
-      <a href="https://twitter.com" style="font-weight: bold;">Twitter</a>
-      <a href="https://linkedin.com">LinkedIn</a>
-      <a href="https://github.com" style="color: green;">GitHub</a>
+  <nav>
+    <div><strong>Anuj Kadam</strong></div>
+    <div>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
     </div>
+  </nav>
+
+  <div class="container">
+    <h1>Contact Me</h1>
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
   </div>
 </body>
 </html>
